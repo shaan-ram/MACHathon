@@ -11,7 +11,9 @@ import { Button } from '@/components/ui/button';
 import { DateRange } from "react-day-picker";
 import emailjs from '@emailjs/browser';
 
-const DashboardPage: React.FC = () => {
+// const DashboardPage: React.FC = () => {
+  export default function DashboardPage() {
+
   const [dropdownValue, setDropdownValue] = React.useState("");
   const [amount, setAmount] = React.useState("");
   const [paymentAccount, setPaymentAccount] = React.useState("");
@@ -153,5 +155,3 @@ const DashboardPage: React.FC = () => {
     </div>
   );
 }
-
-export default DashboardPage;

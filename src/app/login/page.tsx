@@ -4,7 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../assets/logo.png'
 
-const LoginPage: React.FC = () => {
+// const LoginPage: React.FC = () => {
+  export default function LoginPage() {
   const router = useRouter();
 
   const [user, setUser] = useState({
@@ -181,5 +182,3 @@ const LoginPage: React.FC = () => {
     </div>
   );
 };
-
-export default LoginPage;
